@@ -86,7 +86,10 @@ header img,
 .icon_nav button,
 .icon_nav i,
 .s1_button,
-.s2_cards_box article {
+.s2_cards_box article,
+.soc_icons_ul svg,
+.soc_icons_ul svg path
+ {
     transition: all 0.75s ease
 }
 
@@ -303,7 +306,11 @@ footer ul {
     column-gap: 16px;
 }
 
-
-.soc_icons_ul img:hover {
+.soc_icons_ul svg:hover {
     cursor: pointer;
+    stroke: #D9D9D9;
+}
+
+.soc_icons_ul svg:hover path {
+    fill: #2C4246;
 }
