@@ -85,7 +85,8 @@ header img:hover {
 header img,
 .icon_nav button,
 .icon_nav i,
-.s1_button {
+.s1_button,
+.s2_cards_box article {
     transition: all 0.75s ease
 }
 
@@ -156,7 +157,6 @@ header img,
     flex-direction: column;
     row-gap: 8px;
     height: 60px;
-    /* border-bottom: solid 2px #05BCCA; */
 }
 
 .s2_textbox h3 {
@@ -167,9 +167,9 @@ header img,
     color: #05BCCA;
 }
 
-.s2_textbox img {
+/* .s2_textbox img {
     margin: auto;
-}
+} */
 
 
 
@@ -184,15 +184,126 @@ header img,
 }
 
 .s2_cards_box article {
-    background-color: cornflowerblue;
+    background-color: #2C4246;
     width: 298px;
+    height: 400px;
     padding: 8px;
     display: flex;
     flex-direction: column;
-    /* row-gap: 16px; */
-    align-items: center;
+    row-gap: 16px;
+}
+
+.s2_cards_box article:hover {
+    box-shadow: 0px 0px 8px 4px #05BCCACC;
 }
 
 .s2_cards_box h4 {
-    background-color: #C46A2B;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #D9D9D9;
+}
+
+.cards_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
+
+
+.cards_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star_div {
+    display: flex;
+    column-gap: 6px;
+}
+
+.star_div i {
+    color: #C46A2B;
+}
+
+.price_div {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_div i {
+    color: #05BCCA;
+}
+
+.price_div p {
+    color: #05BCCA;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+/* Footer */
+footer {
+    background-color: #2C4246;
+    padding-block: 48px;
+}
+
+.footer_sections {
+    display: flex;
+    column-gap: 223px;
+    justify-content: center;
+}
+
+.footer_header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    margin-bottom: 24px;
+}
+
+footer h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #D9D9D9;
+}
+
+.footer_line {
+    width: 80px;
+}
+
+footer a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #D9D9D9;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.contact_nav nav {
+    margin-bottom: 8px;
+}
+
+.soc_icons_ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+
+.soc_icons_ul img:hover {
+    cursor: pointer;
 }
