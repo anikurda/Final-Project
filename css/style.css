@@ -88,8 +88,7 @@ header img,
 .s1_button,
 .s2_cards_box article,
 .soc_icons_ul svg,
-.soc_icons_ul svg path
- {
+.soc_icons_ul svg path {
     transition: all 0.75s ease
 }
 
@@ -152,6 +151,7 @@ header img,
     background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
+    overflow-x: scroll;
 }
 
 .s2_textbox {
@@ -159,7 +159,7 @@ header img,
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    height: 60px;
+    margin-bottom: 64px;
 }
 
 .s2_textbox h3 {
@@ -170,25 +170,28 @@ header img,
     color: #05BCCA;
 }
 
-/* .s2_textbox img {
-    margin: auto;
-} */
-
-
-
-
-
-
-
 .s2_cards_box {
     margin: auto;
     display: flex;
     column-gap: 20px;
 }
 
+@media (max-width:1342px) {
+    .s2_cards_box {
+        /* margin-left: 45px; */
+        margin-inline-end: 45px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .section2 {
+        height: 720px;
+    }
+}
+
 .s2_cards_box article {
     background-color: #2C4246;
-    width: 298px;
+    /* width: 298px; */
     height: 400px;
     padding: 8px;
     display: flex;
