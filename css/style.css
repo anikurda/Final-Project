@@ -1,3 +1,4 @@
+/* Home Page */
 .container {
     width: min(100%, 1440px);
     margin: auto;
@@ -335,4 +336,19 @@ footer ul {
 
 .soc_icons_ul svg:hover path {
     fill: #2C4246;
+}
+
+/* Catalog Page */
+
+
+
+/* Contact Page */
+/* Main Section */
+.contact_section {
+    background-image: url(../images/contact_background.png);
+    background-position: right;
+}
+
+.map_box_icons svg:hover path {
+    fill: #e18747;
 }
