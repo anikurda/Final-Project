@@ -347,8 +347,123 @@ footer ul {
 .contact_section {
     background-image: url(../images/contact_background.png);
     background-position: right;
+    height: 720px;
+    padding-inline: 94px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
+.contact_content {
+    width: 616px;
+    height: 509px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_content p {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.info_box {
+    background-color: #2C4246;
+    padding-inline: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.info_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.mail_box,
+.tel_box {
+    display: flex;
+    align-content: center;
+    column-gap: 16px;
+}
+
+.mail_box a,
+.tel_box a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #D9D9D9;
+}
+
+.form_map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_map form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_box {
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 16px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    background-color: #2C4246;
+    border: none;
+    padding: 6px 8px;
+    color: #A1C3C9;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+textarea {
+    height: 103px;
+    margin-bottom: 24px;
+}
+
+.form_map form button {
+    background-color: #C46A2B;
+    border: none;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.map_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.map_box iframe {
+    width: 286px;
+    height: 151px;
+}
+
+.map_box_icons svg:hover {
+    stroke: #ef9c60;
+}
 .map_box_icons svg:hover path {
     fill: #e18747;
 }
