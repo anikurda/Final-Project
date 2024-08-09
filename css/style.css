@@ -214,7 +214,8 @@ header img,
     box-shadow: 0px 0px 8px 4px #05BCCACC;
 }
 
-.s2_cards_box h4 {
+.s2_cards_box h4,
+.cards_content h4 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -233,6 +234,7 @@ header img,
 .cards_text {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .star_div {
@@ -339,8 +341,117 @@ footer ul {
 }
 
 /* Catalog Page */
+/* Main Section */
+.catalog_main {
+    background-color: #012426;
+    padding: 96px 94px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    align-items: center;
+}
 
+/* Top Settings Box */
+.setting_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.filter_box {
+    display: flex;
+    column-gap: 16px;
+}
+
+.sort_box {
+    display: flex;
+    column-gap: 32px;
+}
+
+.setting_box p {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #D9D9D9;
+}
+
+.setting_box button {
+    background-color: #A1C3C9;
+    width: 160px;
+    height: 32px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2C4246;
+}
+
+/* Guitar Cards Section */
+.catalog_cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.catalog_cards article {
+    background-color: #2C4246;
+}
+
+.catalog_cards .cards_content {
+    margin: 16px 8px;
+}
+
+/* Page Navigation */
+.page_nav {
+    display: flex;
+    column-gap: 48px;
+    align-items: center;
+}
+
+.page_nav button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #D9D9D9;
+}
+
+.previous_btt {
+    background-color: #C46A2B;
+}
+
+.next_btt {
+    background-color: #05BCCA;
+}
+
+.page_nav p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
 
 /* Contact Page */
 /* Main Section */
@@ -464,6 +575,7 @@ textarea {
 .map_box_icons svg:hover {
     stroke: #ef9c60;
 }
+
 .map_box_icons svg:hover path {
     fill: #e18747;
 }
