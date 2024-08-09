@@ -41,6 +41,9 @@ header {
 
 .burger_icon {
     display: none;
+    color: #05BCCA;
+    font-size: 32px;
+    cursor: pointer;
 }
 
 header img {
@@ -97,7 +100,8 @@ header img,
 .section1 {
     height: 560px;
     background-image: url(../images/section1_img.png);
-    object-fit: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: center;
     padding-block: 72px;
 }
@@ -189,10 +193,9 @@ header img,
 
 @media (max-width:1342px) {
     .s2_cards_box {
-        /* margin-left: 45px; */
-        margin-inline-end: 45px;
         overflow-x: scroll;
         overflow-y: hidden;
+        padding-inline: 45px;
     }
 
     .section2 {
@@ -277,13 +280,6 @@ footer {
     justify-content: center;
 }
 
-.footer_header {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
-    margin-bottom: 24px;
-}
-
 footer h5 {
     font-family: "Inter", sans-serif;
     font-size: 24px;
@@ -291,7 +287,6 @@ footer h5 {
     line-height: 32px;
     text-align: left;
     color: #D9D9D9;
-    margin-bottom: 4px;
 }
 
 footer h5::after {
@@ -300,10 +295,8 @@ footer h5::after {
     height: 2px;
     background-color: #D9D9D9;
     display: block;
-}
+    margin-bottom: 24px;
 
-.footer_line {
-    width: 80px;
 }
 
 footer a {
@@ -321,7 +314,7 @@ footer ul {
     row-gap: 8px;
 }
 
-.contact_nav nav {
+.contact_info_nav {
     margin-bottom: 8px;
 }
 
@@ -573,7 +566,7 @@ textarea {
 }
 
 .map_box_icons svg:hover {
-    stroke: #ef9c60;
+    stroke: #f6c5a3;
 }
 
 .map_box_icons svg:hover path {

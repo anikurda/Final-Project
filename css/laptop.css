@@ -1,3 +1,30 @@
 @media (max-width: 1025px) {
-    
+    .container {
+        width: min(100%, 1025px);
+    }
+
+    /* Home Page */
+    /* Header */
+    header {
+        padding-inline: 45px;
+    }
+
+    .page_nav {
+        display: none;
+    }
+
+    .burger_icon {
+        display: block;
+    }
+
+    /* Footer */
+    @media (max-width:893px) {
+
+        .footer_sections {
+            column-gap: calc(149 / 744 * 100%);
+        }
+    }
+
+
+
 }
