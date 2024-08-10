@@ -18,10 +18,15 @@
     }
 
     /* Footer */
-    @media (max-width:893px) {
+    @media (max-width:873px) {
+
+        footer {
+            padding-inline: 32px;
+        }
 
         .footer_sections {
-            column-gap: calc(149 / 744 * 100%);
+            column-gap: 0;
+            justify-content: space-between;
         }
     }
 
@@ -30,6 +35,25 @@
         .catalog_main {
             padding-inline: 45px;
         }
+    }
+
+    /* Contact Page */
+    .contact_section {
+        padding-inline: 45px;
+    }
+
+
+    @media (max-width:873px) {
+        .contact_section {
+            height: 100%;
+            padding: 48px 32px;
+        }
+
+        .contact_content {
+            width: 100%;
+            margin: auto;
+        }
+
     }
 
 }

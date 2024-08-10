@@ -83,4 +83,10 @@
         display: none;
     }
 
+    /* Contact Page */
+    @media (max-width:380px) {
+        .contact_section {
+            padding-inline: 8px;
+        }
+    }
 }
