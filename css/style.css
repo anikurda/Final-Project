@@ -291,22 +291,20 @@ header img,
     box-shadow: 0px 0px 8px 4px #05BCCACC;
 }
 
-.s2_cards_box h4,
-.cards_content h4 {
+
+figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.cards_h {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 27px;
     color: #D9D9D9;
 }
-
-.cards_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 70px;
-}
-
 
 .cards_text {
     display: flex;
