@@ -369,7 +369,7 @@ footer ul {
     color: #D9D9D9;
 }
 
-.setting_box button {
+.sort_button {
     background-color: #A1C3C9;
     width: 160px;
     height: 32px;
@@ -381,7 +381,9 @@ footer ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+.sort_button p {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -395,10 +397,34 @@ footer ul {
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 40px;
+    justify-content: center;
+}
+
+.catalog_cards img {
+    height: 298px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .catalog_cards article {
+    /* display: flex;
+    flex-direction: column; */
     background-color: #2C4246;
+    height: 400px;
+    /* width: 298px; */
+    /* flex-basis: calc(298px / 1440px * 100%); */
+    /* width: min(100%, 457px); */
+    flex-grow: 1;
+}
+
+@media (max-width:1121px) {
+
+    .cat_card9,
+    .cat_card10,
+    .cat_card11,
+    .cat_card12 {
+        display: none;
+    }
 }
 
 .catalog_cards .cards_content {
@@ -406,13 +432,13 @@ footer ul {
 }
 
 /* Page Navigation */
-.page_nav {
+.cat_page_nav {
     display: flex;
     column-gap: 48px;
     align-items: center;
 }
 
-.page_nav button {
+.cat_page_nav button {
     padding: 8px;
     border-radius: 8px;
     border: none;
@@ -422,7 +448,10 @@ footer ul {
     justify-content: space-between;
     align-items: center;
     column-gap: 16px;
+}
 
+.previous_btt p,
+.next_btt p {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -438,7 +467,7 @@ footer ul {
     background-color: #05BCCA;
 }
 
-.page_nav p {
+.cat_page_nav_p {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;

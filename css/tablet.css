@@ -62,4 +62,9 @@
             align-items: center;
         }
     }
+
+    /* Catalog Page */
+    .catalog_main {
+        padding: 48px 32px;
+    }
 }

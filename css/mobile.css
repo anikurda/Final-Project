@@ -53,4 +53,34 @@
     .s2_cards_box {
         padding-inline: 20px;
     }
+
+    /* Catalog Page */
+    .catalog_main {
+        padding: 32px 20px;
+        row-gap: 40px;
+    }
+
+    .filter_box p {
+        display: none;
+    }
+
+    .sort_button {
+        width: 35px;
+        justify-content: center;
+    }
+
+    .sort_button p {
+        display: none;
+    }
+
+    .cat_page_nav button {
+        width: 52px;
+        justify-content: center;
+    }
+
+    .previous_btt p,
+    .next_btt p {
+        display: none;
+    }
+
 }

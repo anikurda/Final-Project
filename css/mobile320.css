@@ -16,4 +16,9 @@
     .s2_cards_box {
         padding-inline: 8px;
     }
+
+    /* Catalog Page */
+    .catalog_main {
+        padding-inline: 8px;
+    }
 }

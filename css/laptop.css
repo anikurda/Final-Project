@@ -25,6 +25,11 @@
         }
     }
 
-
+    /* Catalog Page */
+    @media (max-width:1023px) {
+        .catalog_main {
+            padding-inline: 45px;
+        }
+    }
 
 }
