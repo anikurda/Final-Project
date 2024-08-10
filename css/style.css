@@ -696,6 +696,7 @@ textarea {
 textarea {
     height: 103px;
     margin-bottom: 24px;
+    resize: none;
 }
 
 .form_map button {
