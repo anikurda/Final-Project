@@ -9,12 +9,28 @@
         padding-inline: 45px;
     }
 
-    .page_nav {
-        display: none;
+    .burger {
+        display: block;
     }
 
-    .burger_icon {
-        display: block;
+    .page_nav {
+        position: fixed;
+        top: 98.4px;
+        left: -100%;
+        width: 200px;
+        height: 144px;
+        padding: 16px 56px 16px 16px;
+        background-color: #C46A2B;
+        transition: .4s linear;
+    }
+
+    .page_nav ul {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .show {
+        left: 0;
     }
 
     /* Footer */

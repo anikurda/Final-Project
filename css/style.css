@@ -39,11 +39,12 @@ header {
     text-shadow: 0 0 10px #8fcde6;
 }
 
-.burger_icon {
+.burger,
+.xMark {
     display: none;
-    color: #05BCCA;
-    font-size: 32px;
     cursor: pointer;
+    width: 32px;
+    height: 32px;
 }
 
 header img {
@@ -53,6 +54,70 @@ header img {
 
 header img:hover {
     filter: drop-shadow(0 0 4px #e8ac80);
+}
+
+/* animation */
+.logo_animation {
+    position: relative;
+}
+
+.logo1 {
+    position: relative;
+    z-index: 1;
+    animation: beat 2s linear infinite;
+}
+
+.logo2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: echo 2s linear infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(0.95);
+    }
+
+    21% {
+        transform: scale(1.1) skew(0.004turn)
+    }
+
+    28% {
+        transform: scale(1) skew(0.008turn);
+    }
+
+    35% {
+        transform: scale(1) skew(0)
+    }
+}
+
+@keyframes echo {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    14% {
+        opacity: 0.4;
+        transform: scale(0.95);
+    }
+
+    21% {
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
 }
 
 .icon_nav ul {
@@ -92,8 +157,17 @@ header img,
 .s1_button,
 .s2_cards_box article,
 .soc_icons_ul svg,
-.soc_icons_ul svg path {
-    transition: all 0.75s ease
+.soc_icons_ul svg path,
+.filter_box img,
+.sort_box button,
+.cat_page_nav button,
+.info_box img,
+.form_map button,
+.brands_nav a,
+.information_nav a,
+.contact_info_nav a,
+.catalog_cards img {
+    transition: all 0.5s ease
 }
 
 /* Section1 */
@@ -314,6 +388,13 @@ footer ul {
     row-gap: 8px;
 }
 
+.brands_nav a:hover,
+.information_nav a:hover,
+.contact_info_nav a:hover {
+    text-shadow: 0 0 6px #ca8757;
+    color: #ccaf89;
+}
+
 .contact_info_nav {
     margin-bottom: 8px;
 }
@@ -351,6 +432,11 @@ footer ul {
     width: 100%;
 }
 
+.setting_box img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #FFFFFF);
+}
+
 .filter_box {
     display: flex;
     column-gap: 16px;
@@ -359,6 +445,10 @@ footer ul {
 .sort_box {
     display: flex;
     column-gap: 32px;
+}
+
+.sort_box button:hover {
+    box-shadow: 0 0 10px #FFFFFF;
 }
 
 .setting_box p {
@@ -406,10 +496,19 @@ footer ul {
     object-fit: cover;
 }
 
+.catalog_cards img:hover {
+    filter: grayscale(100%);
+    scale: 1.05;
+}
+
+.card_div {
+    overflow: hidden;
+}
+
 .catalog_cards article {
     background-color: #2C4246;
     height: 400px;
-    flex-grow: 1;
+    flex: 1 1 298px;
 }
 
 @media (max-width:1121px) {
@@ -458,8 +557,16 @@ footer ul {
     background-color: #C46A2B;
 }
 
+.previous_btt:hover {
+    box-shadow: 0 0 10px #c48e68;
+}
+
 .next_btt {
     background-color: #05BCCA;
+}
+
+.next_btt:hover {
+    box-shadow: 0 0 10px #6dc9d0;
 }
 
 .cat_page_nav_p {
@@ -505,6 +612,11 @@ footer ul {
     justify-content: space-between;
     align-items: center;
     height: 150px;
+}
+
+.info_box img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #FFFFFF);
 }
 
 .info_content {
@@ -569,7 +681,7 @@ textarea {
     margin-bottom: 24px;
 }
 
-.form_map form button {
+.form_map button {
     background-color: #C46A2B;
     border: none;
     width: 100%;
@@ -580,6 +692,10 @@ textarea {
     font-weight: 400;
     line-height: 24px;
     color: #FFFFFF;
+}
+
+.form_map button:hover {
+    box-shadow: 0 0 10px #b78764;
 }
 
 .map_box {
