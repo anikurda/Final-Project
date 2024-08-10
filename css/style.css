@@ -494,9 +494,28 @@ footer ul {
     object-fit: cover;
 }
 
-.catalog_cards img:hover {
+.catalog_cards article:hover .card_img {
     filter: grayscale(100%);
-    scale: 1.05;
+    scale: 1.1;
+}
+
+.cards_content {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #D9D9D9;
+}
+
+.cards_content {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.catalog_cards article:hover {
+    cursor: pointer;
 }
 
 .card_div {
@@ -519,7 +538,7 @@ footer ul {
     }
 }
 
-.catalog_cards .cards_content {
+.cards_content {
     margin: 16px 8px;
 }
 
