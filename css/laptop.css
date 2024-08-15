@@ -33,6 +33,20 @@
         left: 0;
     }
 
+    /* Section2 */
+    .section2 {
+        padding-inline: 45px 0;
+    }
+
+    .s2_cards_box {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .s2_cards_box article {
+        flex: 1 0 298px;
+    }
+
     /* Footer */
     @media (max-width:873px) {
 

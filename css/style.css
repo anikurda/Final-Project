@@ -174,7 +174,8 @@ header img,
 .section1 {
     height: 560px;
     background-image: url(../images/section1_img.png);
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-block: 72px;
@@ -225,21 +226,26 @@ header img,
 
 /* Section2 */
 .section2 {
-    height: 716px;
-    padding-block: 96px;
+    /* height: 716px; */
+    /* padding-block: 96px; */
     background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
     overflow-x: scroll;
+
+    padding: 96px 94px;
+    align-items: center;
+    row-gap: 64px;
+
 }
 
-.s2_textbox {
+/* .s2_textbox {
     margin: auto;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
     margin-bottom: 64px;
-}
+} */
 
 .s2_textbox h3 {
     font-family: "Inter", sans-serif;
@@ -260,12 +266,12 @@ header img,
 }
 
 .s2_cards_box {
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     column-gap: 20px;
 }
 
-@media (max-width:1342px) {
+/* @media (max-width:1342px) {
     .s2_cards_box {
         overflow-x: scroll;
         overflow-y: hidden;
@@ -275,12 +281,12 @@ header img,
     .section2 {
         height: 720px;
     }
-}
+} */
 
 .s2_cards_box article {
     background-color: #2C4246;
     /* width: 298px; */
-    height: 400px;
+    /* height: 400px; */
     padding: 8px;
     display: flex;
     flex-direction: column;
@@ -322,10 +328,11 @@ figure {
 }
 
 .price_div {
-    width: 50px;
+    /* width: 50px; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    column-gap: 4px;
 }
 
 .price_div i {
@@ -614,7 +621,7 @@ footer ul {
     justify-content: space-between;
 }
 
-.contact_content p {
+.contact_content h6 {
     font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 700;

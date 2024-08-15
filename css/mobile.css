@@ -33,13 +33,15 @@
 
     /* Section2 */
     .section2 {
-        height: 544px;
-        padding-block: 32px;
+        /* height: 544px; */
+        /* padding-block: 32px; */
+        row-gap: 40px;
+        padding: 32px 0 32px 20px;
     }
 
-    .s2_textbox {
+    /* .s2_textbox {
         margin-bottom: 40px;
-    }
+    } */
 
     .s2_textbox h3 {
         font-size: 24px;
@@ -50,9 +52,9 @@
         width: 156px;
     }
 
-    .s2_cards_box {
+    /* .s2_cards_box {
         padding-inline: 20px;
-    }
+    } */
 
     /* Catalog Page */
     .catalog_main {
@@ -106,8 +108,12 @@
         height: 320px;
     }
 
-    .s2_cards_box {
+    /* .s2_cards_box {
         padding-inline: 8px;
+    } */
+
+    .section2 {
+        padding-left: 8px;
     }
 
     /* Catalog Page */
